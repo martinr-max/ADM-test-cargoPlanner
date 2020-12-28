@@ -44,9 +44,6 @@ const useStyles = makeStyles((theme) => ({
    
   }));
 
-
-
-
 export default function Search({handleSearchChange, searchTerm, handleKeyPress}) {
 
     const classes = useStyles();
