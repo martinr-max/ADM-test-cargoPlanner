@@ -76,13 +76,13 @@ export default function CargoPlanner() {
     return(  
         <React.Fragment>
             <CargoAppBar
-            onLoadCompanies={onLoadCompanies}
-            handleSearchChange={handleSearchChange}
-            searchTerm={searchTerm}
-            handleKeyPress={handleKeyPress}
-            companyList = {companyList}
-            openCompanyDetails={openCompanyDetails}
-            onSaveCompanies={onSaveCompanies}
+             onLoadCompanies={onLoadCompanies}
+             handleSearchChange={handleSearchChange}
+             searchTerm={searchTerm}
+             handleKeyPress={handleKeyPress}
+             companyList = {companyList}
+             openCompanyDetails={openCompanyDetails}
+             onSaveCompanies={onSaveCompanies}
              />
             <Container>
                 <Grid  container spacing={1}>
