@@ -95,7 +95,7 @@ export default function CargoPlanner() {
                     <Grid item xl={6}>
                         {companyList &&
                          !error &&
-                         choosedCompanyId && searchResults.length === 0 && companyList.map(com => {
+                         searchResults.length === 0 && companyList.map(com => {
                             return choosedCompanyId === com.id ?
                                 <CompanyPage
                                  key={com.id} 
