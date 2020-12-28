@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { StylesProvider } from '@material-ui/core';
+import Cargoplanner from './CargoPlanner/pages/CargoPlanner';
+import { Route, BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
+import CompanyPage from './CargoPlanner/components/companyPage/CompanyPage';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+  return(
+    <div>
+      <StylesProvider injectFirst>
+      <Router>
+      <Redirect from='/planner/:id' to='/planner'/>
+        <Switch>
+          <Route path="/planner"  component={Cargoplanner}/>
+          <Route path="/planner/:id" component={CompanyPage}/>
+        </Switch> 
+      </Router>
+      </StylesProvider>
     </div>
-  );
+  );  
 }
 
 export default App;

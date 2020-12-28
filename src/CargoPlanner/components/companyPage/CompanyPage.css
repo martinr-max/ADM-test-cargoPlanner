@@ -1,0 +1,14 @@
+.CompanyContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.companyName {
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.cargoInfo {
+    margin-bottom: 20px;
+}

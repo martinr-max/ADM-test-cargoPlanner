@@ -1,0 +1,27 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.title {
+padding-right: 10px;
+}
+
+@media screen and (min-width: 334px) and (max-width: 1024px) {
+  .navLinks  {
+    display: none;
+  }
+
+  .searchInput {
+    display: none;
+  }
+
+  #loadButton {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .MuiIconButton-label{
+    display: none;
+  }
+}
